@@ -1,0 +1,123 @@
+span {
+    font-weight: bold;
+    background: rgb(126, 177, 253);
+    padding: .3em .8em;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15%;
+    
+}
+
+.play-container {
+    padding: 3em;
+    border: 1px solid lightgrey;
+    margin-bottom: 1em;
+
+    input {
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
+
+.image {
+    height:40em; 
+    background-size:cover;
+    width:auto;
+    background-image:url('./car.png');
+    background-position:50% 50%;
+}
+
+.catcon {
+    background-color: lightseagreen;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        //margin: 10px 10px 10px 10px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        //justify-content: space-between;
+        //flex-wrap: wrap;
+        background-color: rgb(235, 235, 235);
+
+        li{
+            margin: 1em 1em 1em 1em;
+            padding: 1em 1em 1em 1em;
+            height: 100px;
+            width: 200px;
+            background-color: lightcoral;
+            text-align: center;
+            //display: flex;
+            //flex-direction: column;
+        }
+
+    }
+}
+
+.catin {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    background-color: lightyellow;
+    padding: 1em;
+    margin: 20px;
+    margin-top: 20px;
+    //float: right;
+    text-align: center;
+    
+
+} 
+
+.cattext {
+    text-align: center;
+}
+
+.main {
+    background-color: rgb(42, 33, 92);
+    padding: 10px 0px 10px 50px;
+    height: 1000px;
+    
+}
+
+.sub {
+    background-color: rgb(215, 220, 221);
+    width: 250px;
+    height: 400px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    p {
+        font-family: 'Billion Dreams';
+        padding: 20px;
+        text-align: justify;
+    }
+
+    h2{
+        color: midnightblue;
+        padding-left: 20px;
+        text-align: left;
+    }
+}
+
+.parent {
+    height: 300px;
+    width: 500px;
+    background-color: mistyrose;
+
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    transition: transform 0.5s cubic-bezier(0.3, 0, 0, 1.08);
+    //transition: background-color 1s;
+}
+
+.parent:hover .child {
+    transform: translateX(300%) translateY(200%);
+    background-color: palevioletred;
+}

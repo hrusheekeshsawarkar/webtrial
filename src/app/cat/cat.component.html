@@ -1,0 +1,11 @@
+<h1>Breweries</h1>
+
+<ul class="backg" *ngIf="brews">
+    <li class="element" *ngFor="let brew of brews">
+        <p class="name">{{ brew.name }}</p>
+        <p class="city">Location: {{ brew.city }}, {{ brew.country }}</p>
+        
+        <p class="website"><a href="{{ brew.website_url }}" target="_blank">Site</a></p>
+        <p class="type">Type: {{ brew.brewery_type }}</p>
+    </li>
+</ul>
